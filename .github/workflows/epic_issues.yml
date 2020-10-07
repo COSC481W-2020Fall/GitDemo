@@ -1,2 +1,11 @@
-- name: Epic issues for GitHub
-  uses: cloudaper/epics-action@v1.0.2
+name: customize-issue-management
+
+on: 
+  [issues]
+  
+jobs:
+  issue_job:
+    runs-on: self-hosted
+    steps:
+      - name: Epic issues for GitHub
+        uses: cloudaper/epics-action@v1.0.2
